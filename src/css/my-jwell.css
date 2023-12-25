@@ -1,0 +1,168 @@
+body {
+  font-family: arial;
+}
+.fs {
+  font-size: 3em;
+}
+.b {
+  border: 1px solid black;
+}
+.p {
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+  color: initial;
+}
+/* this is a nav bar  =================================== */
+nav {
+  height: 7.2em;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  box-shadow: 1px 1px 8px rgb(157, 157, 233);
+}
+.first-row {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+}
+-----------------------------
+.logo-section {
+  display: flex;
+  width: 6em;
+  height: 3em;
+}
+.logo img {
+  width: 4em;
+  height: 3.5em;
+}
+.bi-justify{
+  display: none;
+}
+------------------
+.search-bar {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+nav input {
+  outline: none;
+  width:55%;
+  height: 2em;
+  border-radius: 1em;
+  position: relative;
+}
+nav .bi-search {
+  position: relative;
+  left: -2em;
+}
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  align-items: center;
+}
+.personal-info .bi-search{
+  display: none;
+}
+.ul1{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.1em;
+}
+/* featured collection ===================================================================== */
+.p1{
+  font-size:2em;
+}
+.p2{
+  font-size:1em;
+}
+.featured-collection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+}
+.product-container img {
+  width: 100%;
+  height: 100%;
+}
+.customise-jwell img{
+  width: 100%;
+  height: 100%;
+}
+.jwell-section{
+  display: flex;
+  align-items: center;
+}
+.customise-jwell button{
+  position: relative;
+  left: 10em;
+  width: 7em;
+}
+
+.customise-jwell button:hover {
+  background-color: transparent;
+  color: black;
+  font-weight:bold;
+}
+
+@media screen and (max-width:700px),(orientation:portrait) {
+  .bi-justify{
+    display: flex;
+  }
+  .logo-section{
+    display: flex;
+  }
+  .bi-translate,.bi-heart-fill ,.bi-map{
+    display: none;
+  }
+  nav input{
+    display: none;
+  }
+  .bi-search{
+  display: none;
+  }
+  .personal-info .bi-search{
+    display: flex;
+  }
+}
+@media screen and (max-width:1150px),(orientation:portrait) {
+  .ul1{
+    display: none;
+  }
+}
+/*mk advantages =================================*/
+.mk-advantages{
+  text-align: center;
+height: 30%;
+width: 80%;
+margin: auto;
+margin-bottom: 5em;
+border-radius: 1em;
+box-shadow: 1px 5px 50px lightblue;
+}
+.advantages{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+ 
+}
+.advantages div{
+  display: block;
+   width: 25%;
+   height: 10em;
+   margin:1.2em ;
+}
+.advantages img{
+  width: 35%;
+}
+.advantages p{
+  font-size: 100%;
+  font-weight: bold;
+}
